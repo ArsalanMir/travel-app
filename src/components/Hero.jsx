@@ -7,11 +7,11 @@ const Hero = () => {
       className="relative flex items-center justify-center text-center text-white min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${hero})` }}
     >
-      {/* **Improved Overlay (Less Dark, Gradient Effect)** */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30"></div>
+      {/* Optional Overlay (Remove if not needed) */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
-      {/* Hero Content with Glass Effect */}
-      <div className="relative z-10 max-w-3xl px-6 py-10 backdrop-blur-md bg-white/10 border border-white/20 rounded-lg shadow-lg">
+      {/* Hero Content (No Blur, No Border) */}
+      <div className="relative z-10 max-w-3xl px-6 py-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text">
           Discover Your Next Adventure
         </h1>
